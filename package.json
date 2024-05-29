@@ -1,5 +1,6 @@
 {
-  "name": "agiletech",
+  "homepage": "https://github.com/Andrew-Vikuk/react-portal",
+  "name": "webportal",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-animated-css": "^1.2.1",
     "react-countup": "^6.4.1",
@@ -30,6 +32,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
